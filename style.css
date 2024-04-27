@@ -24,20 +24,259 @@ body {
     font-family: 'Raleway', serif;
 }
 
+header {
+    background-image:url(images/island-hlavicka.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+   flex-direction: column;
+}
+
+header p.autor {
+    margin: 5px;
+}
+
+.linka {
+    width:15%; height:2px; background: rgb(218, 215, 215);
+    margin: 10px;
+    align-self: center;
+}
+
+.autor {
+    opacity: 0.7;
+    
+
+  
+}
 
 /* MENU */
+.menu {
+    text-decoration: none;
+    list-style: none;
+    padding-right: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    border-bottom: solid 0.1px grey;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+li {
+    margin: 10px;
+
+}
+
 
 
 
 
 /* OBSAH */
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+h2 {
+    margin: 30px;
+}
 
+.linkamodra {
+    width:15%; height: 5px; background-color: dodgerblue;
+    margin: 0;
+    align-self: center;
+}
+p {
+    margin: 30px
+}
 
 /* FOTOGALERIE */
 
+.galerie {
+    margin-top: 30px;
+
+    box-shadow: 0px 10px 50px #c6c6c6;
+
+}
 
 
+
+.popisektext {
+    margin: 0;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+.popisekodkaz {
+    color: grey;
+}
+
+.foto {
+    width: 100%;
+}
+
+.foto img {
+    max-width: 100%;
+    width: 100%;
+}
 
 /* PATICKA */
+
+footer {
+    color: grey;
+}
+
+footer a {
+    color: grey;
+}
+
+@media (min-width: 500px) {
+   
+    
+    .menu {
+       display: flex;
+       justify-content: center;
+     
+    
+    }
+    .menu a {
+        font-size: 1.3vw;
+        text-align: center;
+        border: solid 1px grey;
+        padding: 5px 15% 5px 15%;
+        white-space: nowrap;
+    }
+
+    .menu li {
+        margin: 0;
+        width: 24.5%;
+    }
+    
+    #odkaz1{
+        border-left: 0;
+    }
+
+    #odkaz2{
+        border-left: 0;
+    }
+
+    #odkaz3{
+        border-left: 0;
+        
+    }
+
+    #odkaz4{
+        border-right: 0;
+        border-left: 0;
+    }
+
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 50%;
+}
+
+.popisek {
+    display: none;
+}
+
+.picture {
+    position: relative;
+}
+
+.popisektext {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+.popisekodkaz {
+    color:white
+}
+}
+@media (min-width: 1000px) {
+    
+   body {
+    display:flex;
+    flex-direction: column;
+   }
+   
+    h1 {
+        font-size: 80px;
+    }
+    
+    
+    .general {
+        width: 960px;
+        margin-top: -90px;
+        background-color: white;
+        align-self: center;
+        
+    }
+
+    .perex {
+        max-width: 700px;
+        align-self: center;
+    }
+    .titulek {
+        margin: 0;
+    }
+
+    header {
+        height: 500px;
+    }
+
+    .menu {
+        float: left;
+        display: inline-block;
+        height: 400px;
+        width: 270px;
+        padding-right: 0;
+        
+    
+    }
+
+
+    .menu a {
+        
+        border:0;
+        text-align: left;
+        border-bottom: solid 1px grey;
+        padding-left: 0;
+       
+    }
+
+    #odkaz1, #odkaz2, #odkaz3, #odkaz4  {
+        padding-right: 200px;
+        font-size: 15px;
+    }
+
+    .sekcecmv {
+        padding-left: 200px;
+    }
+    .foto {
+        width: 30%;
+    }
+    
+    .galerie {
+       box-sizing: border-box;
+    }
+     
+}
